@@ -1,7 +1,10 @@
 import React, { useEffect, useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import { AppContext } from '../../Context/AppContext';
 import { useHistory } from 'react-router-dom';
+
+import { AppContext } from '../../Context/AppContext';
+
+import Projects from '../../Components/projects';
 import AdminControls from '../../Components/adminControls';
 
 function Home() {
@@ -21,6 +24,9 @@ function Home() {
       </h1>
 
       {globalState.state.userInfo.role === 'Admin' && <AdminControls />}
+      {globalState.state.userInfo.role === 'Admin' && <hr />}
+
+      <Projects />
     </Container>
   );
 }

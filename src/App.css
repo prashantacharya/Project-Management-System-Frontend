@@ -3,3 +3,53 @@
   width: 100%;
   padding: 2px;
 }
+
+nav a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.project-list li {
+  list-style-type: none;
+}
+
+.project-list li a {
+  color: #1e44b7;
+}
+
+.project-list li a:hover {
+  text-decoration: none;
+  color: #223675;
+}
+
+.project-item {
+  margin: 20px 0;
+  border-radius: 15px;
+  padding: 25px;
+  background: #f9f5f0;
+}
+
+.project-tasks-users {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.project-tasks {
+  width: 75%;
+  padding: 10px 0;
+}
+
+.project-users {
+  width: 25%;
+  padding: 10px 20px;
+  background-color: #efefef;
+}
+
+.project-tasks-users ul {
+  list-style: none;
+}
